@@ -41,11 +41,10 @@ const AboutPage = () => {
       transition: {
         duration: 3,
         repeat: Infinity,
-        ease: "easeInOut",
+        ease: "easeInOut" as const,
       },
     },
   };
-
   return (
     <div className="font-sans bg-white text-gray-800 overflow-hidden">
       {/* Hero Section */}
