@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, easeOut, easeInOut } from 'framer-motion';
 import { Moon, Sun, TrendingUp, TrendingDown } from 'lucide-react';
 import getBestWorstSleep from '@/app/actions/getBestWorstSleep';
 import { useEffect, useState } from 'react';
@@ -43,14 +43,14 @@ const BestWorstSleep = () => {
       scale: 1,
       transition: {
         duration: 0.5,
-        ease: "easeOut"
+        ease: easeOut
       }
     },
     hover: {
       scale: 1.02,
       transition: {
         duration: 0.2,
-        ease: "easeInOut"
+        ease: easeInOut
       }
     }
   };
@@ -62,7 +62,7 @@ const BestWorstSleep = () => {
       opacity: 1,
       transition: {
         duration: 0.8,
-        ease: "easeOut"
+        ease: easeOut
       }
     }
   };
