@@ -19,9 +19,9 @@ export default async function HomePage() {
           <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-xl border border-white/20 flex flex-col sm:flex-row items-center sm:items-start gap-6 hover:shadow-2xl transition-all duration-300">
             {/* User Image */}
             <div className="relative">
-              <img
+               <img
                 src={user.imageUrl}
-                alt={`${user.firstName}&#39;s profile`}
+                alt={`${user.firstName}'s profile`}
                 className="w-24 h-24 rounded-2xl border-2 border-indigo-100 shadow-lg object-cover"
               />
               <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-green-500 rounded-full border-4 border-white flex items-center justify-center">
