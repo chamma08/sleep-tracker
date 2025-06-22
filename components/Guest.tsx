@@ -1,6 +1,6 @@
 "use client";
 import { SignInButton } from "@clerk/nextjs";
-import { motion } from "framer-motion";
+import { motion, easeInOut } from "framer-motion";
 import { Moon, Zap, BarChart3, Star, CheckCircle } from "lucide-react";
 import Image from "next/image";
 
@@ -22,7 +22,7 @@ const Guest = () => {
       y: 0,
       transition: {
         duration: 0.6,
-        ease: "easeInOut", // Use a valid easing string
+        ease: easeInOut, // Use the imported easing function
       },
     },
   };
@@ -33,7 +33,7 @@ const Guest = () => {
       transition: {
         duration: 3,
         repeat: Infinity,
-        ease: "easeInOut", // Use a valid easing string
+        ease: easeInOut, // Use the imported easing function
       },
     },
   };
