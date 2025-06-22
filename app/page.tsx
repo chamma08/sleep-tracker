@@ -21,7 +21,7 @@ export default async function HomePage() {
             <div className="relative">
                <img
                 src={user.imageUrl}
-                alt={`${user.firstName}'s profile`}
+                alt="profile"
                 className="w-24 h-24 rounded-2xl border-2 border-indigo-100 shadow-lg object-cover"
               />
               <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-green-500 rounded-full border-4 border-white flex items-center justify-center">
