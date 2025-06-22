@@ -55,7 +55,7 @@ const BestWorstSleep = () => {
     }
   };
 
-  const iconVariants = {
+   const iconVariants = {
     hidden: { rotate: -180, opacity: 0 },
     visible: {
       rotate: 0,
