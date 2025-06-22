@@ -1,5 +1,6 @@
 import { checkUser } from "@/lib/checkUser";
 import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+import Image from "next/image";
 
 import Link from "next/link";
 
@@ -14,10 +15,12 @@ export default async function Navbar() {
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0">
               <div className="flex items-center space-x-2">
-                <img
-                  className="h-20 w-20 sm:h-16 sm:w-16"
+                <Image
                   src="/logo.png"
                   alt="Sleep Tracker Logo"
+                  width={80}
+                  height={80}
+                  className="h-20 w-20 sm:h-16 sm:w-16"
                 />
               </div>
             </Link>

@@ -2,6 +2,7 @@
 import { SignInButton } from "@clerk/nextjs";
 import { motion } from "framer-motion";
 import { Moon, Zap, BarChart3, Star, CheckCircle } from "lucide-react";
+import Image from "next/image";
 
 const Guest = () => {
   const containerVariants = {
@@ -66,7 +67,7 @@ const Guest = () => {
           </h1>
 
           <p className="text-lg md:text-xl mb-8 text-slate-600 leading-relaxed max-w-lg">
-            Join thousands who've improved their sleep quality with our
+            Join thousands who&apos;ve improved their sleep quality with our
             intelligent tracking and personalized insights.
           </p>
 
@@ -111,9 +112,11 @@ const Guest = () => {
             animate="animate"
           >
             <div className="absolute inset-0 bg-indigo-200 rounded-3xl blur-3xl opacity-30"></div>
-            <img
-              src="sleep-tracker.png"
+            <Image
+              src="/sleep-tracker.png"
               alt="SleepTracker Dashboard"
+              width={500}
+              height={400}
               className="relative w-full max-w-lg rounded-3xl shadow-2xl"
             />
           </motion.div>
@@ -239,7 +242,7 @@ const Guest = () => {
                   ))}
                 </div>
                 <p className="text-slate-700 mb-6 leading-relaxed italic">
-                  "{testimonial.quote}"
+                  &ldquo;{testimonial.quote}&rdquo;
                 </p>
                 <div>
                   <p className="font-semibold text-slate-900">

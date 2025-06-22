@@ -178,7 +178,7 @@ const RecordHistoryClient = ({ records, averageSleep, sleepQuality }: RecordHist
           initial="hidden"
           animate="show"
         >
-          {records.map((record: Record, index: number) => (
+          {records.map((record: Record) => (
             <motion.div
               key={record.id}
               variants={{

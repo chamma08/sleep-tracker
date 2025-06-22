@@ -10,6 +10,7 @@ import {
   Title,
   Tooltip,
   Legend,
+  TooltipItem,
 } from 'chart.js';
 
 // Register Chart.js components
@@ -72,7 +73,7 @@ const BarChart = ({ records }: { records: Record[] }) => {
         cornerRadius: 8,
         displayColors: false,
         callbacks: {
-          label: function(context: any) {
+          label: function(context: TooltipItem<'bar'>) {
             return `${context.parsed.y} hours`;
           }
         }
