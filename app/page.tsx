@@ -1,5 +1,6 @@
 import AddNewRecord from "@/components/AddNewRecord";
 import AverageSleep from "@/components/AverageSleep";
+import BestWorstSleep from "@/components/BestWorstSleep";
 import Guest from "@/components/Guest";
 import RecordChart from "@/components/RecordChart";
 import { currentUser } from "@clerk/nextjs/server";
@@ -70,6 +71,7 @@ export default async function HomePage() {
             <div className='text-6xl mb-4'>🎯</div>
             <h3 className='text-xl font-semibold text-gray-700 mb-2'>Sleep Goals</h3>
             <AverageSleep />
+            <BestWorstSleep />
           </div>
         </div>
       </div>
