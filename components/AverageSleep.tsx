@@ -18,7 +18,10 @@ const AverageSleep = () => {
     const fetchSleepData = async () => {
       try {
         const data = await getUserRecord();
-        setSleepData(data);
+        setSleepData({
+          record: typeof data.record === "number" ? data.record : 0,
+          daysWithRecords: typeof data.daysWithRecords === "number" ? data.daysWithRecords : 0,
+        });
       } catch (err) {
         console.error("Error fetching user record:", err);
         setError(true);
