@@ -67,8 +67,8 @@ const Guest = () => {
           </h1>
 
           <p className="text-lg md:text-xl mb-8 text-slate-600 leading-relaxed max-w-lg">
-            Join thousands who&apos;ve improved their sleep quality with our
-            intelligent tracking and personalized insights.
+            Join thousands who have already improved their sleep quality with our intelligent
+            tracking and personalized insights.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -81,13 +81,6 @@ const Guest = () => {
                 Start Tracking Free
               </motion.button>
             </SignInButton>
-
-            {/* <motion.button
-              className="border-2 border-slate-300 hover:border-slate-400 px-8 py-4 rounded-xl font-semibold text-lg"
-              whileHover={{ scale: 1.02, y: -2 }}
-            >
-              Learn More
-            </motion.button> */}
           </div>
 
           <div className="flex items-center gap-6 text-sm text-slate-500">
