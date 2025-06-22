@@ -81,12 +81,12 @@ const Guest = () => {
               </motion.button>
             </SignInButton>
 
-            <motion.button
+            {/* <motion.button
               className="border-2 border-slate-300 hover:border-slate-400 px-8 py-4 rounded-xl font-semibold text-lg"
               whileHover={{ scale: 1.02, y: -2 }}
             >
               Learn More
-            </motion.button>
+            </motion.button> */}
           </div>
 
           <div className="flex items-center gap-6 text-sm text-slate-500">
@@ -281,7 +281,7 @@ const Guest = () => {
           </motion.p>
           <SignInButton>
             <motion.button
-              className="bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl"
+              className="bg-white text-indigo-600 px-8 py-4 rounded-xl cursor-pointer font-semibold text-lg shadow-lg hover:shadow-xl"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
             >
