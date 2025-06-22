@@ -1,5 +1,6 @@
 import AddNewRecord from "@/components/AddNewRecord";
 import Guest from "@/components/Guest";
+import RecordChart from "@/components/RecordChart";
 import { currentUser } from "@clerk/nextjs/server";
 
 export default async function HomePage() {
@@ -61,9 +62,8 @@ export default async function HomePage() {
         <div className='space-y-6'>
           {/* Placeholder for future components */}
           <div className='bg-white/60 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-white/20 text-center'>
-            <div className='text-6xl mb-4'>📊</div>
             <h3 className='text-xl font-semibold text-gray-700 mb-2'>Sleep Analytics</h3>
-            <p className='text-gray-500'>Coming soon...</p>
+            <RecordChart />
           </div>
           <div className='bg-white/60 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-white/20 text-center'>
             <div className='text-6xl mb-4'>🎯</div>
