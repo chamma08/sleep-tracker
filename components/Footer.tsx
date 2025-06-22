@@ -44,13 +44,13 @@ const Footer = () => {
                 Dashboard
               </Link>
               <Link
-                href='/analytics'
+                href='/'
                 className='block text-gray-400 hover:text-indigo-400 text-sm transition-colors duration-200'
               >
                 Sleep Analytics
               </Link>
               <Link
-                href='/settings'
+                href='/'
                 className='block text-gray-400 hover:text-indigo-400 text-sm transition-colors duration-200'
               >
                 Settings
