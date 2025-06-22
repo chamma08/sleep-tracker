@@ -39,7 +39,7 @@ export default async function HomePage() {
                 <span className="ml-2 text-2xl">👋</span>
               </h2>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Ready to track another great night's sleep? Monitor your
+                Ready to track another great night&apos; sleep? Monitor your
                 patterns and improve your rest quality.
               </p>
               <div className="space-y-3">
