@@ -87,7 +87,7 @@ const BarChart = ({ records }: { records: Record[] }) => {
         ticks: {
           font: {
             size: 11,
-            weight: '500' as const,
+            weight: 500,
           },
           color: '#6b7280',
         },
@@ -104,14 +104,14 @@ const BarChart = ({ records }: { records: Record[] }) => {
           text: 'Hours',
           font: {
             size: 12,
-            weight: '600' as const,
+            weight: 600,
           },
           color: '#374151',
         },
         ticks: {
           font: {
             size: 11,
-            weight: '500' as const,
+            weight: 500,
           },
           color: '#6b7280',
           stepSize: 1,
